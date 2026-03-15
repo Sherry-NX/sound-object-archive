@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Sound Objects Archive — Home</title>
+  
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="./assets/style.css" />
+
+</head>
+<body>
+  <div class="container">
+    
+<div class="nav">
+  <div class="brand">Sound Objects Archive (Template)</div>
+  <div class="navlinks">
+    <a class="active" href="./index.html">Home</a>
+    <a class="" href="./browse.html">Browse</a>
+    <a class="" href="./about.html">About</a>
+  </div>
+</div>
+
+    <div class="hero">
+      <div class="kicker">Class project template</div>
+      <h1>Sound Objects Archive</h1>
+      <p>
+        This is a minimal, no-database template for a public class archive: navigation, entries, and search.
+        Replace the test content with your own sound objects.
+      </p>
+      <div class="grid">
+        <div class="col-8">
+          <div class="card">
+            <h2 style="margin:0 0 10px;">Search the archive</h2>
+            <form id="homeSearchForm" class="row" style="margin-top: 8px;">
+              <input id="homeQ" class="input" placeholder="Try: loudspeaker, 1976, broadcast…" />
+              <button class="btn" type="submit">Search</button>
+            </form>
+            <div class="small" style="margin-top:10px;">
+              Tip: The Browse page also lets you filter by tags.
+            </div>
+          </div>
+          <div class="card" style="margin-top:14px;">
+            <h2 style="margin:0 0 10px;">Featured (test entries)</h2>
+            <div class="small">These are placeholders. Edit <code class="inline">data/entries.json</code> and the files in <code class="inline">entries/</code>.</div>
+            <div class="hr"></div>
+            <div class="cards">
+              <div class="entry-card">
+                <h3 style="margin:0;"><a href="./entries/001.html">Test Sound 01 — Morning Broadcast</a></h3>
+                <div class="small">A sample entry page with an embedded audio placeholder.</div>
+              </div>
+              <div class="entry-card">
+                <h3 style="margin:0;"><a href="./entries/002.html">Test Sound 02 — Loudspeaker Announcement</a></h3>
+                <div class="small">Another entry, with tags you can click in Browse.</div>
+              </div>
+              <div class="entry-card">
+                <h3 style="margin:0;"><a href="./entries/003.html">Test Sound 03 — Work Song Fragment</a></h3>
+                <div class="small">Short excerpt text to support quick search.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card">
+            <h2 style="margin:0 0 10px;">How to add an entry</h2>
+            <ol class="small" style="line-height:1.6; padding-left: 18px; margin: 0;">
+              <li>Copy <code class="inline">entries/003.html</code> and rename it.</li>
+              <li>Edit the title/metadata/audio embed inside that file.</li>
+              <li>Add the new entry to <code class="inline">data/entries.json</code>.</li>
+              <li>Commit and publish (GitHub Pages).</li>
+            </ol>
+            <div class="hr"></div>
+            <div class="small">
+              Audio tip: host large audio externally (SoundCloud / Internet Archive / school storage) and embed or link.
+            </div>
+          </div>
+          <div class="footer">
+            Made for small archives (10–30 entries). No server required.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/app.js"></script>
+  <script>TemplateApp.initHomeSearch();</script>
+</body>
+</html>
