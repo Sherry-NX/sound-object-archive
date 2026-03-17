@@ -4,38 +4,29 @@
     "title": "Test Sound 01 — Morning Broadcast",
     "date": "1976-05-01",
     "place": "Nanjing (test)",
-    "tags": [
-      "broadcast",
-      "daily life",
-      "city"
-    ],
-    "excerpt": "A placeholder description. Imagine a morning radio broadcast: formal announcer voice, short music bumper, and a schedule of public news.",
-    "href": "./entries/001.html"
+    "tags": ["broadcast", "daily life", "city"],
+    "excerpt": "A placeholder description. Imagine a morning radio broadcast with a formal announcer, short music bumper, and public news.",
+    "href": "./entries/001.html",
+    "image": "./assets/test1.jpg"
   },
   {
     "id": "002",
     "title": "Test Sound 02 — Loudspeaker Announcement",
     "date": "1968-10",
     "place": "Factory courtyard (test)",
-    "tags": [
-      "loudspeaker",
-      "public space",
-      "work"
-    ],
-    "excerpt": "A placeholder description. A loudspeaker announcement echoes across a courtyard; the timbre is sharp, with reverb and crowd noise in the distance.",
-    "href": "./entries/002.html"
+    "tags": ["loudspeaker", "public space", "work"],
+    "excerpt": "A placeholder description. A loudspeaker announcement echoes across a courtyard, with reverb and distant crowd noise.",
+    "href": "./entries/002.html",
+    "image": "./assets/test2.jpg"
   },
   {
     "id": "003",
     "title": "Test Sound 03 — Work Song Fragment",
     "date": "1959",
     "place": "Rural field (test)",
-    "tags": [
-      "labor",
-      "song",
-      "rural"
-    ],
-    "excerpt": "A placeholder description. Short rhythmic chant sung in unison. You can note tempo, call-and-response patterns, and who is speaking.",
-    "href": "./entries/003.html"
+    "tags": ["labor", "song", "rural"],
+    "excerpt": "A placeholder description. A short rhythmic chant sung in unison, with attention to tempo and call-and-response pattern.",
+    "href": "./entries/003.html",
+    "image": "./assets/test3.jpg"
   }
 ]

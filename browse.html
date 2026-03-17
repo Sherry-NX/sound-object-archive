@@ -2,58 +2,61 @@
 <html lang="en">
 <head>
   <title>Sound Objects Archive — Browse</title>
-  
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" href="./assets/style.css" />
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
   <div class="container">
-    
-<div class="nav">
-  <div class="brand">Sound Objects Archive (Template)</div>
-  <div class="navlinks">
-    <a class="" href="./index.html">Home</a>
-    <a class="active" href="./browse.html">Browse</a>
-    <a class="" href="./about.html">About</a>
-  </div>
-</div>
+    <div class="nav">
+      <div class="brand">SOUND OBJECTS ARCHIVE</div>
+      <div class="navlinks">
+        <a href="./index.html">Home</a>
+        <a class="active" href="./browse.html">Browse</a>
+        <a href="./about.html">About</a>
+      </div>
+    </div>
 
     <div class="hero">
-      <div class="kicker">Browse & search</div>
-      <h1>Browse entries</h1>
-      <p>Search titles, excerpts, dates, places, and tags. Click a tag to filter.</p>
-      <div class="grid">
-        <div class="col-4">
-          <div class="card">
-            <h2 style="margin:0 0 10px;">Search</h2>
-            <input id="q" class="input" placeholder="Type to search…" />
-            <div class="hr"></div>
-            <div class="row" style="justify-content: space-between;">
-              <div class="small">Filter by tag</div>
-              <div class="small"><span id="resultCount">0 results</span></div>
-            </div>
-            <div id="tagChips" class="tags" style="margin-top:10px;"></div>
-          </div>
-          <div class="card" style="margin-top:14px;">
-            <h2 style="margin:0 0 10px;">Notes</h2>
-            <div class="small" style="line-height:1.6;">
-              For a small archive, a single <code class="inline">entries.json</code> file makes search easy.
-              If you later grow big, you can switch to a full-text indexer.
-            </div>
-          </div>
-        </div>
-        <div class="col-8">
-          <div id="entryList" class="cards"></div>
-        </div>
+      <div class="center-buttons">
+        <a href="./index.html">Introduction</a>
+        <a href="./about.html">Information for users</a>
       </div>
+
+      <div class="search-row">
+        <input id="q" class="input" type="text" placeholder="Search in Objects" />
+      </div>
+
+      <div class="filter-button-wrap">
+        <button class="filter-button" type="button" onclick="document.getElementById('tagSection').scrollIntoView({behavior:'smooth'})">
+          Filter by keywords
+        </button>
+      </div>
+
+      <div class="view-toggle">
+        <span>▦ Grid</span>
+        <span>≡ List</span>
+      </div>
+
+      <div id="tagSection" class="card" style="margin-bottom: 24px;">
+        <div class="row" style="justify-content: space-between;">
+          <div class="small">Filter by tag</div>
+          <div class="small"><span id="resultCount">0 results</span></div>
+        </div>
+        <div id="tagChips" class="tags"></div>
+      </div>
+
+      <div id="entryList" class="cards"></div>
+
       <div class="footer">
-        Edit entries at <code class="inline">data/entries.json</code>.
+        Browse sound objects by keyword, title, place, date, or tag.
       </div>
     </div>
   </div>
+
   <script src="./assets/app.js"></script>
-  <script>TemplateApp.initBrowse();</script>
+  <script>
+    TemplateApp.initBrowse();
+  </script>
 </body>
 </html>
